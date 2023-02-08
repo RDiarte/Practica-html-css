@@ -1,0 +1,113 @@
+body {
+  background-color: #25316d;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav,
+header,
+main,
+footer {
+  /* Medidas relativas a nivel pantalla: viewports o % */
+  padding: 0% 7%;
+}
+
+nav {
+  height: 7vh;
+}
+
+header {
+  height: 80vh;
+  background-color: #5f6f94;
+  background-image: url(https://www.yunbitsoftware.com/blog/wp-content/uploads/2017/03/imagen-articulo-flexbox.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #fef5ac;
+  height: 12vh;
+}
+
+.d-block {
+  display: block;
+  border: 1px solid black;
+  margin: 16px;
+  padding: 16px;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.d-flex {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+
+.card-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* height: 1000px; */
+}
+
+.card {
+  border-radius: 1rem;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaffd0;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-option {
+  margin: 0.625rem;
+}
+.nav-btn {
+  list-style: none;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: white;
+}
+.article {
+  color: #97d2ec;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.card-foot {
+  margin: 1rem;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+}
