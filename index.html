@@ -4,43 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practicas html-css</title>
+    <title>Document</title>
+
     <link rel="stylesheet" href="CSS/index.css" />
   </head>
+
   <body>
     <nav class="d-flex navbar">
-      <div class="logo">FLEX</div>
-
-      <div>
+      <div><h1 class="h1">Rolling Proyect</h1></div>
+      <div class="navbar">
         <ul class="d-flex nav-btn">
-          <li class="nav-option"><button>Opcion 1</button></li>
-          <li class="nav-option"><button>Opcion 2</button></li>
-          <li class="nav-option"><button>Opcion 3</button></li>
+          <li class="nav-option"><button>Home</button></li>
+          <li class="nav-option"><button>Search</button></li>
         </ul>
       </div>
     </nav>
 
     <header class="d-flex flex-center flex-column">
-      <h1>Pruebas con Flex</h1>
-      <button>PELIGRO</button>
+      <h2 class="texto">Conociendo el HTML</h2>
     </header>
     <main>
       <section>
-        <div class="d-flex card-list">
-        <article class="card d-flex">TEST</article>
-        <article class="card d-flex">TEST</article>
-        <article class="card d-flex">TEST</article>
-      </section>
-         <div class="article"><article  >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eveniet id debitis assumenda, laudantium natus ducimus aliquid corrupti reiciendis nulla provident impedit tempore nisi molestiae vel? Commodi, reprehenderit? Aspernatur, blanditiis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloribus nobis sed id quaerat debitis necessitatibus provident iure expedita, minus, blanditiis vel perferendis eveniet obcaecati fugit corrupti eligendi assumenda porro! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis sit adipisci animi totam aliquam veritatis, fugiat quisquam libero quia, voluptas rerum explicabo tempora eaque illo! Facere quisquam quibusdam est recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid velit voluptatum numquam temporibus nemo ipsum suscipit deserunt facere necessitatibus, iure odit, explicabo quo fuga consectetur labore, error cum ipsam eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestiae sit esse error, mollitia dolorem. Ullam eius quas delectus sed! Eaque eligendi odit unde, et sequi veritatis! Perspiciatis, commodi praesentium.</article></div>
+        <div class="d-grid grid-list-container flex-center">
+          <article class="article">
+            <h4 class="h4">
+              Esta guia nos va a permitir conocer para que sirve y algunos
+              comandos basicos de html
+            </h4>
+            El HTML es un lenguaje usado para desarrollar la estructura de una
+            página web, las siglas HTML significa Hypertext Markup Language o en
+            español lenguaje marcado de hipertexto. Este lenguaje es codificado
+            por los navegadores para que los usuarios puedan ver la información
+            contenida en la página web.Para trabajar con HTML solo se necesita
+            un editor de texto plano. Existen muchos programas de este tipo por
+            ejemplo: bloc de notas, sublime text, aptana, brackets editor,
+            visual code, atom, etc.
+          </article>
+          <article>
+            <iframe
+              width="390"
+              height="315"
+              src="https://www.youtube.com/embed/hKPYkxdbRiY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </article>
+          <article></article>
         </div>
-      </main>
-      <footer>
-        <div>
-        <ul class="d-flex nav-btn">
-        <li class="card-foot d-flex">Ayuda</li>
-      <li class="card-foot d-flex">Enviar comentarios</li>
-      <li class="card-foot d-flex">privacidad</li></ul>
-    </div>
-  </footer>
+      </section>
+    </main>
   </body>
+
+  <footer>
+    <h3>Contactanos</h3>
+    <br />
+    <form action="">
+      <label for="fname">Nombre:</label>
+      <input type="text" />
+      <br />
+      <label for="lname">Apellido:</label>
+      <input type="text" />
+    </form>
+    <br />
+    <label for="Contacto">Telefono</label>
+    <input id="Contaco" name="Contacto" type="radio" />
+    <label for="Contacto">email</label>
+    <input id="Contacto" name="Contacto" type="radio" />
+    <br />
+    <input type="tel" />
+
+    <br />
+    <button type="submit">Enviar</button>
+  </footer>
 </html>

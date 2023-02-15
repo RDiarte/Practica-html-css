@@ -1,66 +1,40 @@
 body {
-  background-color: #25316d;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-nav,
-header,
-main,
-footer {
-  /* Medidas relativas a nivel pantalla: viewports o % */
-  padding: 0% 7%;
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-color: #6096b4;
 }
 
-nav {
-  height: 7vh;
+.nav-btn {
+  list-style: none;
+}
+
+.nav-option {
+  margin: 0.625rem;
 }
 
 header {
   height: 80vh;
-  background-color: #5f6f94;
-  background-image: url(https://www.yunbitsoftware.com/blog/wp-content/uploads/2017/03/imagen-articulo-flexbox.png);
+  background-image: url(https://wallpapers.com/images/hd/code-text-colorful-symbols-programming-avfu043y2kv52wha.webp);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-footer {
-  margin-top: auto;
-  background-color: #fef5ac;
-  height: 12vh;
-}
-
-.d-block {
-  display: block;
-  border: 1px solid black;
-  margin: 16px;
-  padding: 16px;
-}
-
-.d-inline {
-  display: inline;
-}
-
-.d-inline-block {
-  display: inline-block;
-  border: 1px solid black;
-  margin: 1rem;
-  padding: 1rem;
 }
 
 .d-flex {
   display: flex;
 }
+
 .flex-center {
   justify-content: center;
   align-items: center;
 }
+
 .flex-column {
   flex-direction: column;
 }
@@ -70,44 +44,55 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* height: 1000px; */
 }
 
-.card {
+.texto {
+  color: rgb(175, 86, 216);
+  font-size: 60px;
+}
+
+.caja {
   border-radius: 1rem;
-  width: 10rem;
-  height: 10rem;
+  width: 40rem;
+  height: 15rem;
   margin: 1rem;
-  font-size: 2rem;
   justify-content: center;
   align-items: center;
-  background-color: #eaffd0;
+  background-color: dimgrey;
 }
 
-.navbar {
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-option {
-  margin: 0.625rem;
-}
-.nav-btn {
-  list-style: none;
+.h1 {
+  color: #eee9da;
+  font-size: 60px;
 }
 
-.logo {
-  font-size: 1.5rem;
-  color: white;
+.h4 {
+  color: #6096b4;
+  font-size: 30px;
 }
 .article {
-  color: #97d2ec;
-  border-radius: 1rem;
-  margin: 1rem;
+  background-color: #bdcdd6;
+  font-size: 20px;
 }
 
-.card-foot {
-  margin: 1rem;
-  font-size: 1rem;
-  justify-content: center;
-  align-items: center;
+.grid {
+  display: grid;
+}
+
+.grid-list-container {
+  grid-template-columns: auto;
+}
+@media (max-width: 576px) {
+  .grid-list-container {
+    grid-template-columns: auto;
+  }
+  .box-4 {
+    border-radius: 1rem;
+    width: 16rem;
+    height: 20rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgrey;
+  }
 }
