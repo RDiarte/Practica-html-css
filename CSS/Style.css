@@ -49,11 +49,12 @@ header {
   flex-direction: row;
 }*/
 
-.card-list {
-  flex-direction: row;
-  flex-wrap: wrap;
+.f-center {
+  display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
+  gap: 1rem;
 }
 
 .texto {
