@@ -1,7 +1,12 @@
+section {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+}
 body {
-  display: flex;
-  flex-direction: column;
+  margin-top: 2rem;
   min-height: 100vh;
+  background-color: #46a5db;
 }
 
 .navbar {
@@ -24,20 +29,25 @@ header {
   background-image: url(https://wallpapers.com/images/hd/code-text-colorful-symbols-programming-avfu043y2kv52wha.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bdcdd6;
+  font-size: 20px;
 }
 
 .d-flex {
   display: flex;
 }
 
-.flex-center {
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-column {
-  flex-direction: column;
-}
+/*.flex-column {
+  flex-direction: row;
+}*/
 
 .card-list {
   flex-direction: row;
@@ -47,18 +57,9 @@ header {
 }
 
 .texto {
-  color: rgb(175, 86, 216);
+  color: rgb(216, 71, 35);
+  text-decoration: solid;
   font-size: 60px;
-}
-
-.caja {
-  border-radius: 1rem;
-  width: 40rem;
-  height: 15rem;
-  margin: 1rem;
-  justify-content: center;
-  align-items: center;
-  background-color: dimgrey;
 }
 
 .h1 {
@@ -67,32 +68,30 @@ header {
 }
 
 .h4 {
-  color: #6096b4;
+  color: #694ecc;
   font-size: 30px;
+  text-align: center;
 }
-.article {
-  background-color: #bdcdd6;
+article {
+  background-color: #46a5db;
   font-size: 20px;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
 }
 
-.grid {
-  display: grid;
+.footer {
+  background-color: #defcf9;
 }
 
-.grid-list-container {
-  grid-template-columns: auto;
-}
-@media (max-width: 576px) {
-  .grid-list-container {
-    grid-template-columns: auto;
+@media (min-width: 768px) {
+  section {
+    grid-template-columns: auto auto;
   }
-  .box-4 {
-    border-radius: 1rem;
-    width: 16rem;
-    height: 20rem;
-    margin: 1rem;
-    justify-content: center;
-    align-items: center;
-    background-color: dimgrey;
+}
+
+@media (min-width: 1200px) {
+  section {
+    grid-template-columns: auto auto auto;
   }
 }
